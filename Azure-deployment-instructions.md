@@ -3,7 +3,7 @@ DOCKER IMP COMMANDS :
 
 -> understanding the docker file commands :
 
-FROM openJdk. -- DEFINES the base image
+> FROM openJdk. -- DEFINES the base image
 WORKDIR /usr/src/myapp.  - create target foldwer with this path
 COPY . /usr/src/mmyapp.  - copy all from current folder to target folder
 RUN javac Test.java
@@ -12,7 +12,7 @@ CMD ["java" ""filename].        --set default executable and parametres for exec
 -----------------------------------------------------------------------------
 Sample with a service :
 
-FROM openjdk
+> FROM openjdk
 WORKDIR /usr/src/myapp
 COPY . /usr/src/myapp/
 CMD ["java","-jar", "jarFileName.jar" ]
